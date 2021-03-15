@@ -7,7 +7,7 @@ api = Api(app)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://{}:{}@{}/{}'.format(
     os.getenv('DB_USER', 'root'),
-    os.getenv('DB_PASSWORD', ''),
+    os.getenv('DB_PASSWORD',''),
     os.getenv('DB_HOST', 'localhost'),
     os.getenv('DB_NAME', 'senegal')
 )

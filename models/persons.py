@@ -3,7 +3,7 @@ from config import db
 
 class PersonModel(db.Model):
     __tablename__="persons"
-    id = db.Column(db.Integer, primary_key=True,auto_increment=True)
+    id = db.Column(db.Integer, primary_key=True,autoincrement=True)
     nom = db.Column(db.String(120), nullable=False, unique=True)
     domaine= db.Column(db.String(120), nullable=False)
     biographie = db.Column(db.String(120))
