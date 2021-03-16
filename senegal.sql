@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 16 mars 2021 à 15:18
+-- Généré le :  mar. 16 mars 2021 à 17:37
 -- Version du serveur :  5.7.23
 -- Version de PHP :  7.2.10
 
@@ -37,15 +37,17 @@ CREATE TABLE IF NOT EXISTS `cultures` (
   `description` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `nom` (`nom`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `cultures`
 --
 
 INSERT INTO `cultures` (`id`, `type`, `url_photo`, `nom`, `description`) VALUES
-(1, 'ETHNIE', '', ' Wolofs et Lebous', 'L\'ethnie  Wolofs et Lebous compte une population d\'environ 5 208 000, ce qui correspond à  39,7 % de la population nationale. Leur langue maternelle est le  wolof.'),
-(2, 'ETHNIE', '', 'Peuls, Poulars, Fula, Toucouleurs,', 'L\'ethnie  Peuls, Poulars, Fula, Toucouleurs,  compte une population d\'environ 3 452 000, ce qui correspond à  26,3 % de la population nationale. Leur langue maternelle est le  peul.');
+(1, 'ETHNIE', NULL, ' Wolofs et Lebous', 'L\'ethnie  Wolofs et Lebous compte une population d\'environ 5 208 000, ce qui correspond à  39,7 % de la population nationale. Leur langue maternelle est le  wolof.'),
+(2, 'ETHNIE', NULL, 'Peuls, Poulars, Fula, Toucouleurs,', 'L\'ethnie  Peuls, Poulars, Fula, Toucouleurs,  compte une population d\'environ 3 452 000, ce qui correspond à  26,3 % de la population nationale. Leur langue maternelle est le  peul.'),
+(3, 'CHANTEUR', 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==', 'youssou', 'NULL'),
+(4, 'CHANTEUR', 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==', 'Ismaila', 'NULL');
 
 -- --------------------------------------------------------
 
@@ -100,12 +102,12 @@ CREATE TABLE IF NOT EXISTS `sites` (
 --
 
 INSERT INTO `sites` (`id`, `nom`, `note`, `description`, `lieu`, `url_photo`) VALUES
-(1, 'Lac Rose', 4, 'Lac rose forte teneur en sels', NULL, NULL),
-(2, 'ile de Goree', 5, 'Maison des Esclaves et fort dEstres', NULL, NULL),
-(3, 'Maison des esclaves', 4, 'Musée sur la traite négriére atlantique', NULL, NULL),
-(4, 'Parc national des oiseaux du Djoudj', 2, 'Zone humide avec animaux sauvages et oiseaux', NULL, NULL),
-(5, 'Parc national du Niokolo-Koba', 3, 'Vaste parc, animaux voie de disparition', NULL, NULL),
-(6, 'Monument de la Renaissance Africaine', 7, 'Statue la plus haute dAfrique, bronze', NULL, NULL);
+(1, 'Lac Rose', 4, 'Lac rose forte teneur en sels', NULL, 'https://t0.gstatic.com/images?q=tbn:ANd9GcRJB7x2n3zGkzNpQ9uadIzRLBRMz7t1ZHOuo19KcSHauXKN4jt14DZGFhnjOz29rCbfye1Zs47NO4D_9z1MNIuhgw'),
+(2, 'ile de Goree', 5, 'Maison des Esclaves et fort dEstres', NULL, 'https://t0.gstatic.com/images?q=tbn:ANd9GcSBbs3Us1y1h68FV4vjtfIIOeYDbXVS8gXXvnEd7pwuTdhRPbH9BTYLkEBx_Gcq3wHbbhYoR8oFmK7_6khV9F2_8w'),
+(3, 'Maison des esclaves', 4, 'Musée sur la traite négriére atlantique', NULL, 'https://t3.gstatic.com/images?q=tbn:ANd9GcRZuHE4oPV5GCHIeGFMuTsI4nnTHkDKApiegOKHPEQxc8zgnUn_ywZVR9b3yQKegn2vCi1HDhrIKuaYa9t5VQkNCg'),
+(4, 'Parc national des oiseaux du Djoudj', 2, 'Zone humide avec animaux sauvages et oiseaux', NULL, 'https://t1.gstatic.com/images?q=tbn:ANd9GcTUn5URwJUINEgbZXuGbvynR1GN0OGD46UIj8rxP5dONx5piAuOHeWLEVrFL5wUo131LEZkKZCSOPTG3E-g2UgQtA'),
+(5, 'Parc national du Niokolo-Koba', 3, 'Vaste parc, animaux voie de disparition', NULL, 'https://lh5.googleusercontent.com/p/AF1QipN8cQD2yx6P4d_fxNpEy2kl6aPt_iTmgW209RZ6=w928-h520-n-k-no'),
+(6, 'Monument de la Renaissance Africaine', 7, 'Statue la plus haute dAfrique, bronze', NULL, 'https://lh5.googleusercontent.com/p/AF1QipM_frev2GQSywPQ7ldHm_g5N0iLczNF4gkEhQqM=w928-h520-n-k-no');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
