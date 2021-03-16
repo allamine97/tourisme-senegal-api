@@ -6,8 +6,10 @@ class SiteService:
         return {
             "id": site.id,
             "nom":site.nom,
-            "note": site.domaine,
+            "note": site.note,
             "description": site.description,
+            "lieu":site.lieu,
+            "url_photo":site.url_photo
         }
     def get_all(self):
         sites = SiteModel.query.all()

@@ -11,7 +11,9 @@ class PersonService:
             "description": person.description,
             "date_naissance": person.date_naissance,
             "date_deces": person.date_deces,
+            "url_photo":person.url_photo
         }
+
     def get_all(self):
         persons = PersonModel.query.all()
         return [self.jsonify(person) for person in persons]

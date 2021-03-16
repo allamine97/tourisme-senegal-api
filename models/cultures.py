@@ -4,9 +4,9 @@ from config import db
 class CultureModel(db.Model):
     __tablename__="cultures"
     id = db.Column(db.Integer, primary_key=True,autoincrement=True)
-    type = db.Column(db.String(120), nullable=False, unique=True)
-    url_photo= db.Column(db.String(120), nullable=False)
-    nom = db.Column(db.String(120))
+    type = db.Column(db.String(120), nullable=False, unique=False)
+    url_photo= db.Column(db.String(120), nullable=True)
+    nom = db.Column(db.String(120),nullable=False,unique=True)
     description = db.Column(db.String(255), nullable=False)
     
 
