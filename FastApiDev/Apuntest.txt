@@ -1,0 +1,5 @@
+https://realpython.com/fastapi-python-web-apis/
+
+Reprendre Senegal Tourisme(en espagnole) avec FastApi
+
+https://realpython.com/fastapi-python-web-apis/
